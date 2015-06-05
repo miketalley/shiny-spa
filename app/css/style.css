@@ -21,16 +21,32 @@
   display: none;
   background: rgba(0,0,0,0.5);
 }
+/*============
+    HOME
+============*/
+
+.home.container .welcome-image {
+  background: url("/app/images/instructions1.jpg") 0% 0%/cover;
+  height: 400px;
+  width: 300px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.home.container .welcome-image .buttons {
+  position: relative;
+  top: 80%;
+}
 
 /* ===========
-   GENERAL
+   GAME
 =========== */
 
-.home .inline-list {
+.game .inline-list {
   margin: -5px 0px 10px -8px;
 }
 
-.home.container .row.top {
+.game.container .row.top {
   padding: 20px;
   width: 100%;
   min-width: 100%;
