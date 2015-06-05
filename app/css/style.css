@@ -1,0 +1,257 @@
+.luckiest-guy, .current-player, .player-numbers.tabs dd>a  {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+#notification-area {
+  font-weight: bolder;
+  color: red;
+  position: relative;
+  padding: 5px;
+  white-space: nowrap;
+}
+
+#spinner
+{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  background: rgba(0,0,0,0.5);
+}
+
+/* ===========
+   GENERAL
+=========== */
+
+.home .inline-list {
+  margin: -5px 0px 10px -8px;
+}
+
+.home.container .row.top {
+  padding: 20px;
+  width: 100%;
+  min-width: 100%;
+}
+
+.game-board {
+  min-width: 50%;
+  float: left;
+}
+
+.info-section {
+  min-width: 40%;
+  float: left;
+}
+
+/* ===========
+  GAME BOARD
+=========== */
+
+.nobles-container .noble {
+  width: 100px;
+  height: 100px;
+}
+
+.level3 .card-container, .level2 .card-container, .level1 .card-container {
+  min-height: 160px;
+  min-width: 115px;
+}
+
+.card {
+  background-size: cover;
+}
+
+.card-container .card {
+  height: 165px;
+  width: 115px;
+  background-size: 165px 115px;
+  min-width: 115px;
+  min-height: 115px;
+}
+
+.card.selection {
+  border-radius: 10px;
+  border: 2px solid #262626;
+  background-size: cover;
+}
+
+.card:hover .buy, .card:hover .reserve, .chip:hover .select, .chip:hover .remove {
+  opacity: 1.00;
+}
+
+.card .buy {
+  width: 70%;
+  margin: 0px auto 10px auto;
+  position: relative;
+  top: 25px;
+  left: 20px;
+}
+
+.card .reserve {
+  width: 70%;
+  position: relative;
+  top: 25px;
+  left: 20px;
+}
+
+.chip {
+  height: 80px;
+  width: 80px;
+  border-radius: 45px;
+}
+
+.count {
+  position: relative;
+  top: 0px;
+  left: 60px;
+  font-weight: bolder;
+  padding: 5px 10px 5px 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+  color: #d3d3d3;
+  /*text-shadow: 1px 1px 3px #d3d3d3;*/
+}
+
+.chip-selection-container {
+  margin: 10px 12px 10px 0px;
+}
+
+.chip .select {
+  position: relative;
+  left: 10px;
+}
+
+.card.selection, .chip.selection {
+  box-shadow: 3px 3px 7px #262626;
+}
+
+
+/* ===========
+ INFO SECTION
+=========== */
+
+.current-player {
+  font-size: 18px;
+}
+
+.chips .chip-selection-container.columns {
+  padding: 0px;
+}
+
+.chip-selection {
+  height: 115px;
+}
+
+.chip.selection {
+  margin-bottom: 5px;
+}
+
+.chip .remove {
+  position: relative;
+  top: 25px;
+  left: -2px;
+}
+
+.card.inventory .buy {
+  position: relative;
+  top: 30px;
+  left: 15px;
+}
+
+.reserved.card:hover .reserved-card-purchase {
+  opacity: 1.00;
+  position: absolute;
+  z-index: 1;
+}
+
+.reserved-card-purchase {
+  height: 111px;
+  width: 80px;
+  opacity: 0;
+}
+
+
+.card.inventory {
+  height: 111px;
+  width: 80px;
+  margin: 0px 18px 0px 18px;
+  transition: top 1s ease;
+}
+
+.inventory .card-stack {
+  height: 290px;
+  width: 88px;
+  border: 1px solid #d3d3d3;
+  background: #ffffff;
+  border-style: double;
+  border-width: 4px;
+}
+
+.card.selection:hover {
+  border: 2px solid red;
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+.chip-inventory-container {
+  padding-bottom: 10px;
+}
+
+.chip.inventory {
+  height: 55px;
+  width: 55px;
+  margin-right: 24px;
+  padding-top: 15px;
+}
+
+.count.inventory {
+  top: -13px;
+  left: 38px;
+  font-size: 0.9em;
+  padding: 2px 5px 2px 5px;
+  width: 50%;
+  text-align: center;
+}
+
+.noble.inventory {
+  height: 80px;
+}
+
+.card .buy, .card .reserve, .chip .select {
+  opacity: 0;
+  padding: 8px 12px 8px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.player-info {
+  background: #d3d3d3;
+  padding-left: 5px;
+}
+
+.selected-chips {
+  margin-bottom: 10px;
+}
+
+.player-info {
+  height: 400px;
+}
+
+.small-border {
+  border: 1px solid;
+}
+
+a.current-player {
+  font-weight: bold;
+  font-style: italic;
+}
+
+dd.active {
+  border: 1px solid #0078a0;
+}
+
